@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.EDG-320 Template Project.iml
+# Datasource local storage ignored files
+/../../../../../../../:\~Unity Projects\~2021.3(LTS)\EDG-320 Template Project\.idea\.idea.EDG-320 Template Project\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

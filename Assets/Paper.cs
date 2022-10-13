@@ -7,6 +7,10 @@ public class Paper : MonoBehaviour
 {
     [SerializeField] private List<Mesh> PaperList = new List<Mesh>();
     [SerializeField] int crumpleIndex;
+    [SerializeField] private BoxCollider planeCollider;
+
+    [SerializeField]
+    private SphereCollider _sphereCollider;
 
     private MeshFilter mf;
     
@@ -21,14 +25,16 @@ public class Paper : MonoBehaviour
     {
 
     }
-
-    
     
     public void CrumplePaper()
     {
         crumpleIndex++;
-        if(crumpleIndex < PaperList.Count)
+        if (crumpleIndex < PaperList.Count)
+        {
+            planeCollider.enabled = false;
+            _sphereCollider.enabled = true;
             mf.mesh = PaperList[crumpleIndex];
+        }
     }
     
     
